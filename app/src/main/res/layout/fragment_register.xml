@@ -9,9 +9,134 @@
         android:id="@id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
+        android:background="@color/transparent"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/btn_personal_center"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <EditText
+            android:id="@+id/reg_phone"
+            android:inputType="phone"
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textSize="15sp"
+            android:hint="请输入手机号码"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/ic_login_password"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/reg_check_number"
+            android:layout_width="80dp"
+            android:layout_height="36dp"
+            android:textSize="15sp"
+            android:hint="请输入短信验证码"/>
+        <Button
+            android:inputType="number"
+            android:layout_marginLeft="150dp"
+            android:id="@+id/reg_get_check_number"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:textSize="15sp"
+            android:hint="获取验证码"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <ImageView
+            android:src="@drawable/ic_login_password"
+            android:layout_width="36dp"
+            android:layout_height="36dp" />
+        <EditText
+            android:id="@+id/reg_password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:textSize="15sp"
+            android:hint="请设置6~20位密码"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:background="#ffffff"
+        android:layout_gravity="left"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="36dp">
+
+        <CheckBox
+
+            android:layout_gravity="left"
+            android:foregroundGravity="left"
+            android:src="@drawable/ic_order_complete"
+            android:layout_width="18dp"
+            android:layout_marginRight="5dp"
+            android:layout_height="18dp"
+            />
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="18dp"
+            android:text="我已阅读并同意《易配网服务条款》"
+            />
+
+    </LinearLayout>
+    <Button
+
+        android:id="@+id/login"
+        android:text="注册"
+        android:layout_gravity="center"
+        android:background="#cdcdcd"
+        android:layout_marginTop="20dp"
+        android:layout_width="160dp"
+        android:layout_height="20dp" />
+
+
+
+
+
+    <TextView
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="0dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="18dp"
+        android:text="服务热线 ：15566411770"
+        />
+
 
 </LinearLayout>

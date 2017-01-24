@@ -1,6 +1,7 @@
 package com.example.xudong.myapplication.loginandregister;
 
 import android.os.Bundle;
+import android.os.Looper;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -69,12 +70,9 @@ public class MainActivity extends BaseActivity {
     @Override
     public void onBackPressed() {
 
-        /*
 
 
-        */
-
-        if(getSupportFragmentManager().getBackStackEntryCount() <= 0)//这里是取出我们返回栈存在Fragment的个数
+        if(getSupportFragmentManager().getBackStackEntryCount() <= 1)//这里是取出我们返回栈存在Fragment的个数
             finish();
         else
             getSupportFragmentManager().popBackStack();
