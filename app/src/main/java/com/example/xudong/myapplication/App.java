@@ -5,6 +5,8 @@ import android.content.Context;
 
 import org.litepal.LitePal;
 
+import cn.smssdk.SMSSDK;
+
 //import org.litepal.LitePal;
 
 /**
@@ -24,6 +26,8 @@ public class App extends Application {
         if (!BuildConfig.DEBUG) {
             AppExceptionHandler.getInstance().setCrashHanler(this);
         }
+
+        SMSSDK.initSDK(this, "ed68736f30f3", "3a2e2b7392b2f6838f07540b38533e90");
 
     }
 

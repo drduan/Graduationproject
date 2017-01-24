@@ -51,7 +51,7 @@ public class SettingFragment extends PreferenceFragment implements Preference.On
         String[] colorNames = getActivity().getResources().getStringArray(R.array.color_name);
 
 
-//        int currentThemeIndex = 0;
+//        int currentThemeIndex = aaa0;
         int currentThemeIndex = SettingsUtil.getTheme();
         if (currentThemeIndex >= colorNames.length) {
             theme.setSummary("自定义色");

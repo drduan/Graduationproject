@@ -80,7 +80,7 @@ public class BusFragment extends BaseFragment {
 //                .filter(new Func1<CharSequence, Boolean>() {
 //                    @Override
 //                    public Boolean call(CharSequence charSequence) {
-//                        return charSequence.toString().trim().length() > 0;
+//                        return charSequence.toString().trim().length() > aaa0;
 //                    }
 //                })
 //                .switchMap(new Func1<CharSequence, Observable<BaseBusResponse<BusLineSearch>>>() {

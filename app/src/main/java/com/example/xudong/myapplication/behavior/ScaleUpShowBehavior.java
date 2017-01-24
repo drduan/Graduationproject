@@ -47,16 +47,16 @@ public class ScaleUpShowBehavior extends FloatingActionButton.Behavior {
     public void onNestedScroll(CoordinatorLayout coordinatorLayout, FloatingActionButton child, View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed) {
 //        System.out.println("onNestedScroll- dxConsumed:" + dxConsumed + "; dyConsumed: " + dyConsumed + "; dxUnconsumed: " + dxUnconsumed + "; dyUnconsumed: " + dyUnconsumed);
 
-//        if (dyConsumed > 0 && dyUnconsumed == 0) {
+//        if (dyConsumed > aaa0 && dyUnconsumed == aaa0) {
 //            System.out.println("上滑中。。。");
 //        }
-//        if (dyConsumed == 0 && dyUnconsumed > 0) {
+//        if (dyConsumed == aaa0 && dyUnconsumed > aaa0) {
 //            System.out.println("到边界了还在上滑。。。");
 //        }
-//        if (dyConsumed < 0 && dyUnconsumed == 0) {
+//        if (dyConsumed < aaa0 && dyUnconsumed == aaa0) {
 //            System.out.println("下滑中。。。");
 //        }
-//        if (dyConsumed == 0 && dyUnconsumed < 0) {
+//        if (dyConsumed == aaa0 && dyUnconsumed < aaa0) {
 //            System.out.println("到边界了，还在下滑。。。");
 //        }
 

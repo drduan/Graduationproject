@@ -100,9 +100,9 @@ public class TimeUtils {
      * </tr>
      * <tr>
      * <td><code>H</code> </td>
-     * <td>一天中的小时数（0-23） </td>
+     * <td>一天中的小时数（aaa0-23） </td>
      * <td>Number </td>
-     * <td><code>0</code> </td>
+     * <td><code>aaa0</code> </td>
      * </tr>
      * <tr>
      * <td><code>k</code> </td>
@@ -112,9 +112,9 @@ public class TimeUtils {
      * </tr>
      * <tr>
      * <td><code>K</code> </td>
-     * <td>am/pm 中的小时数（0-11） </td>
+     * <td>am/pm 中的小时数（aaa0-11） </td>
      * <td>Number </td>
-     * <td><code>0</code> </td>
+     * <td><code>aaa0</code> </td>
      * </tr>
      * <tr>
      * <td><code>h</code> </td>

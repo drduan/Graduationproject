@@ -1,0 +1,43 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/rel_head1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/primrose_yellow"
+        app:layout_behavior=".behavior.HideHeadBehavior" />
+
+
+    <View
+        android:id="@+id/rel_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:background="@color/white"
+        app:layout_behavior=".behavior.TouchBehavior" />
+
+
+    <View
+
+        android:layout_marginTop="100dp"
+        android:id="@+id/rel_head"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/lapis_blue"
+        app:layout_behavior=".behavior.HideHeadBehavior1" />
+
+
+
+
+    <!--<View-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_marginTop="250dp"-->
+        <!--app:layout_behavior=".behavior.MoveWithHeadBehavior1"-->
+        <!--android:background="@color/greenery" />-->
+
+</android.support.design.widget.CoordinatorLayout>

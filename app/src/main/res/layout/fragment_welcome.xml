@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.5">
+
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:layout_marginBottom="20dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- 第三方登陆-->
+        <Button
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Google"
+            android:id="@+id/button_google"
+            android:layout_weight="1" />
+
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="0.8">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:id="@+id/button_go_signup"
+                android:background="@color/Color_DarkOrange"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signup"
+                android:background="@color/transparent"
+                android:layout_weight="1.5" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/signin"
+                android:id="@+id/button_go_login"
+                android:background="@color/Color_DarkOrange"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

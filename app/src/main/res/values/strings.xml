@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">空车配货App</string>
+    <string name="app_name">易配</string>
 
     <string name="open">open</string>
     <string name="close">close</string>
@@ -75,4 +75,8 @@
         <item>xiaolin</item>
     </string-array>
 
+
+    <string name="hello_world">Hello world!</string>
+    <string name="signin">登陆</string>
+    <string name="signup">注册</string>
 </resources>

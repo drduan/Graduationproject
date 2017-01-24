@@ -218,15 +218,15 @@ public class HomeActivity extends BaseActivity {
 
     @Override
     public void onBackPressed() {
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            if (!DoubleClickExit.check()) {
-                Snackbar.make(HomeActivity.this.getWindow().getDecorView().findViewById(android.R.id.content), "再按一次退出 App!", Snackbar.LENGTH_SHORT).show();
-            } else {
-                super.onBackPressed();
-            }
-        }
+//        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+//            mDrawerLayout.closeDrawer(GravityCompat.START);
+//        } else {
+//            if (!DoubleClickExit.check()) {
+//                Snackbar.make(HomeActivity.this.getWindow().getDecorView().findViewById(android.R.id.content), "再按一次退出 App!", Snackbar.LENGTH_SHORT).show();
+//            } else {
+//                super.onBackPressed();
+//            }
+//        }
     }
 
 
