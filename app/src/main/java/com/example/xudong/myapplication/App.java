@@ -1,7 +1,12 @@
 package com.example.xudong.myapplication;
 
 import android.app.Application;
+import android.app.Service;
 import android.content.Context;
+import android.os.Vibrator;
+
+import com.baidu.location.service.LocationService;
+import com.baidu.mapapi.SDKInitializer;
 
 import org.litepal.LitePal;
 
@@ -16,9 +21,15 @@ import cn.smssdk.SMSSDK;
 public class App extends Application {
 
     private static Context mContext;
+    public LocationService locationService;
+    public Vibrator mVibrator;
+
 
     @Override
     public void onCreate() {
+
+
+
         super.onCreate();
         mContext = getApplicationContext();
 
@@ -28,6 +39,15 @@ public class App extends Application {
         }
 
         SMSSDK.initSDK(this, "ed68736f30f3", "3a2e2b7392b2f6838f07540b38533e90");
+
+
+        //初始化百度地图sdk
+        locationService = new LocationService(getApplicationContext());
+        mVibrator =(Vibrator)getApplicationContext().getSystemService(Service.VIBRATOR_SERVICE);
+        SDKInitializer.initialize(getApplicationContext());
+
+
+
 
     }
 
