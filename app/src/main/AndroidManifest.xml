@@ -80,6 +80,8 @@
             android:windowSoftInputMode="stateHidden|adjustResize"/>
 
 
+
+
         <activity
             android:name=".SettingActivity"
             android:label="@string/title_activity_setting"

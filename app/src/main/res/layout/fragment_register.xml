@@ -4,7 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/grey">
+    android:background="#ededf2">
     <android.support.v7.widget.Toolbar
         android:id="@id/toolbar"
         android:layout_width="match_parent"
@@ -116,13 +116,13 @@
     </LinearLayout>
     <Button
 
-        android:id="@+id/login"
+        android:id="@+id/register_submit"
         android:text="注册"
         android:layout_gravity="center"
         android:background="#cdcdcd"
         android:layout_marginTop="20dp"
         android:layout_width="160dp"
-        android:layout_height="20dp" />
+        android:layout_height="30dp" />
 
 
 
