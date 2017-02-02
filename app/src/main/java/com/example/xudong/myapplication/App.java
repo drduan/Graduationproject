@@ -4,9 +4,13 @@ import android.app.Application;
 import android.app.Service;
 import android.content.Context;
 import android.os.Vibrator;
+import android.widget.Toast;
 
 import com.baidu.location.service.LocationService;
 import com.baidu.mapapi.SDKInitializer;
+import com.blankj.utilcode.utils.Utils;
+import com.example.xudong.myapplication.utils.ToastUtil;
+import com.squareup.leakcanary.LeakCanary;
 
 import org.litepal.LitePal;
 
@@ -47,7 +51,15 @@ public class App extends Application {
         SDKInitializer.initialize(getApplicationContext());
 
 
+        Utils.init(mContext);
 
+        if (LeakCanary.isInAnalyzerProcess(this)) {
+            // This process is dedicated to LeakCanary for heap analysis.
+            // You should not init your app in this process.
+            return;
+        }
+        LeakCanary.install(this);
+        ToastUtil.init(this);
 
     }
 

@@ -28,6 +28,7 @@
     <color name="pink_yarrow">#C72B6C</color>
     <color name="niagara">#4C829E</color>
 
+    <color name="divider">#DCDCDC</color>
     <array name="colors">
         <item>@color/lapis_blue</item>
         <item>@color/pale_dogwood</item>
@@ -39,4 +40,19 @@
         <item>@color/pink_yarrow</item>
         <item>@color/niagara</item>
     </array>
+
+
+    <color name="primary_text">#424242</color>
+    <color name="secondary_text">#9e9e9e</color>
+    <color name="light_text">@color/gray</color>
+    <color name="gray">#9E9E9E</color>
+    <color name="gray_light">#d2d2d2</color>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+
+    <color name="white_bg">#FFFFFF</color>
+    <color name="dark_gray_bg">#F5F5F5</color>
+    <color name="light_gray_bg">#EDEDED</color>
 </resources>

@@ -1,28 +1,72 @@
 package com.example.xudong.myapplication.utils;
 
+import android.content.Context;
+import android.support.annotation.StringRes;
 import android.widget.Toast;
 
-import com.example.xudong.myapplication.App;
+import com.example.xudong.myapplication.AppConfig;
 
+public final class ToastUtil {
 
-/**
- * Created by liyu on 2016/9/13.
- */
-public class ToastUtil {
+    private static Toast sToast;
 
-    public static void showShort(int resId) {
-        Toast.makeText(App.getContext(), resId, Toast.LENGTH_SHORT).show();
+    private ToastUtil() {
     }
 
-    public static void showShort(String message) {
-        Toast.makeText(App.getContext(), message, Toast.LENGTH_SHORT).show();
+    public static void init(Context context) {
+        if (sToast == null) {
+            sToast = Toast.makeText(context, "", Toast.LENGTH_SHORT);
+        }
     }
 
-    public static void showLong(int resId) {
-        Toast.makeText(App.getContext(), resId, Toast.LENGTH_LONG).show();
+    public static void showToast(@StringRes int resId) {
+        show(resId, Toast.LENGTH_SHORT);
     }
 
-    public static void showLong(String message) {
-        Toast.makeText(App.getContext(), message, Toast.LENGTH_LONG).show();
+    public static void showToast(Object object) {
+        show(object, Toast.LENGTH_SHORT);
+    }
+
+    public static void showLongToast(@StringRes int resId) {
+        show(resId, Toast.LENGTH_LONG);
+    }
+
+    public static void showLongToast(Object object) {
+        show(object, Toast.LENGTH_LONG);
+    }
+
+    /**
+     * 只有在debug模式才会显示出来
+     *
+     * @param object
+     */
+    public static void showDebugToast(Object object) {
+        if (AppConfig.DEBUG) {
+            show(object, Toast.LENGTH_LONG);
+        }
+    }
+
+    private static void show(@StringRes int resId, int length) {
+        check();
+        if (resId > 0) {
+            sToast.setText(resId);
+            sToast.setDuration(length);
+            sToast.show();
+        }
+    }
+
+    private static void show(Object object, int length) {
+        check();
+        if (object != null) {
+            sToast.setText(object.toString());
+            sToast.setDuration(length);
+            sToast.show();
+        }
+    }
+
+    private static void check() {
+        if (sToast == null) {
+            throw new IllegalStateException("you must call ToastUtil.init(context) first");
+        }
     }
 }

@@ -1,17 +1,23 @@
 package com.example.xudong.myapplication.loginandregister;
 
 import android.os.Bundle;
-import android.os.Looper;
-import android.util.Log;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.support.v4.app.FragmentManager;
 import com.example.xudong.myapplication.R;
 import com.example.xudong.myapplication.base.BaseActivity;
 import com.example.xudong.myapplication.loginandregister.fragments.FragmentWelcome;
-import com.orhanobut.logger.Logger;
+
+
+
+
+
+
 
 public class MainActivity extends BaseActivity {
+
+
 
     @Override
     protected int getLayoutId() {
@@ -36,7 +42,8 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-       // setContentView(R.layout.activity_lr);
+
+        setDisplayHomeAsUpEnabled(false);
 
         FragmentManager fm = getSupportFragmentManager();
         fm.beginTransaction()
